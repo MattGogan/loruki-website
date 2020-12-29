@@ -2,6 +2,9 @@
 
 :root {
   --primary-color: #047aed;
+  --primary-color: darkgreen;
+  --primary-color: #65caEA;
+  --primary-color: #0b90c4;
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
@@ -19,6 +22,11 @@ body {
   font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
+}
+
+.landingHero{
+  max-height: 850px;
+  min-height: 850px;
 }
 
 ul {
@@ -62,6 +70,12 @@ pre {
   background-color: var(--primary-color);
   color: #fff;
   height: 70px;
+  z-index: 25;
+}
+
+.blankspace{
+  min-height:200px;
+  max-height:200px;
 }
 
 .navbar ul {
@@ -114,7 +128,7 @@ pre {
   height: 350px;
   width: 400px;
   padding: 40px;
-  z-index: 100;
+  z-index: 20;
   justify-self: flex-end;
   animation: slideInFromRight 1s ease-in;
 }
@@ -373,4 +387,9 @@ pre {
   .showcase-form {
     width: 300px;
   }
+}
+
+
+.heroImage{
+  display: inline-block;
 }

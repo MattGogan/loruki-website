@@ -5,54 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Loruki | Cloud Hosting For Everyone</title>
+    <title>FilterHub</title>
 </head>
 <body>
+
+    <!--Hero Landing Page-->
+    <div id = "divHero" class = "landingHero flex">
+        <span class = "heroTitle fade-in-doubletime">We Are Advanced Filtration.</span>
+        <span id = divHeroImageWrapper class = "heroImageWrapper fade-in-fast">
+        <img src = "assets/aHepa.png" class = "heroImage">    
+        </span>
+        
+        
+    </div>
+
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar" id = "navbar">
         <div class="container flex">
-            <h1 class="logo">Loruki.</h1>
+            <h1 class="logo">FilterHub.</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="features.html">Shop</a></li>
+                    <li><a href="docs.html">About</a></li>
+                    <li><a href="docs.html">Cart</a></li>
+                    <li><a href="docs.html">Sign In</a></li>
                 </ul>
             </nav>
         </div>
     </div>
+
+    <div id = "divBetweenNavAndContent" class = "blankspace"></div>
     
     <!-- Showcase -->
     <section class="showcase">
         <div class="container grid">
             <div class="showcase-text">
-                <h1>Easier Deployment</h1>
-                <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
+                <h1>We have just the thing for you.</h1>
+                <p>Find your next replacement filter fasterwith FilterHub.</p>
                 <a href="features.html" class="btn btn-outline">Read More</a>
             </div>
 
             <div class="showcase-form card">
-                <h2>Request a Demo</h2>
-                 <!--  <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact">
-                    <p class="hidden">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                      </p>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
-                </form> -->
+                <h2>Find Your Filter</h2>
                  <form>
                     <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
+                        <select id = "selectManufacturer">
+                        <option value = "AS">AirScience</option>
+                        <option value = "Mis">Misonix</option>    
+                        </select>
                     </div>
                     <div class="form-control">
                         <input type="text" name="company" placeholder="Company Name" required>
@@ -121,12 +124,12 @@
     <!-- Languages -->
     <section class="languages">
         <h2 class="md text-center my-2">
-            Supported Languages
+            Supported Manufacturers
         </h2>
         <div class="container flex">
             <div class="card">
-                <h4>Node.js</h4>
-                <img src="images/logos/node.png" alt="">
+                <h4>AirScience</h4>
+                <img src="assets/airsciencelogo.png" class = "companycard" alt="">
             </div>
             <div class="card">
                 <h4>Python</h4>
@@ -159,15 +162,16 @@
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
             <div>
-                <h1>Loruki
+                <h1>FilterHub.
                 </h1>
                 <p>Copyright &copy; 2020</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                    <li>120 6th Street</li>
+                    <li>Fort Myers, Florida</li>
+                    <li>Made in the USA</li>
                 </ul>
             </nav>
             <div class="social">
@@ -178,5 +182,6 @@
             </div>
         </div>
     </footer>
+    <script src = "js/utilities.js"></script>
 </body>
 </html>
