@@ -6,6 +6,14 @@
     -ms-animation: fadeIn ease 2s;
   }
 
+  .fade-out-very-fast{
+    animation: fadeOut ease 1s;
+    -webkit-animation: fadeOut ease 1s;
+    -moz-animation: fadeOut ease 1s;
+    -o-animation: fadeOut ease 1s;
+    -ms-animation: fadeOut ease 1s;
+  }
+
   .fade-in-doubletime{
     animation: fadeIn ease 5s;
     -webkit-animation: fadeIn ease 5s;
@@ -44,6 +52,31 @@
   @-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+  }
+  
+  @keyframes fadeOut {
+    100% {opacity:0;}
+    0% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeOut {
+    100% {opacity:0;}
+    0% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeOut {
+    100% {opacity:0;}
+    0% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeOut {
+    100% {opacity:0;}
+    0% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeOut {
+    100% {opacity:0;}
+    0% {opacity:1;}
   }
 
 

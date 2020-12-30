@@ -1,9 +1,10 @@
 .container {
-  max-width: 1100px;
+  max-width: 80%;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
 }
+
 
 .card {
   background-color: #fff;
@@ -66,6 +67,12 @@
 .btn-dark a {
   color: #fff;
 }
+
+
+.btn-center{
+  margin-left: 20%;
+}
+
 
 /* Text colors */
 .text-primary {
@@ -252,16 +259,36 @@ Sticky navbar stuff
 .heroImageWrapper{
   margin-left: 0%;
   display: inline-block;
-  max-width: 65%;
+  max-width: 45%;
   z-index: -2;
-
+  
 }
 
 .heroTitle{
-  padding: 100px;
   font-size: 64px;
+  margin-left: 0%;
+  min-width: 50%;
+  min-width: 50%;
+  
+}
+
+.herobutton{
+  margin-top: 20%;
+  margin-left: 15%;
+  transform: scale(.5);
+}
+
+.herobutton:hover{
+  transform: scale(.48);
 }
 
 .companycard{
   max-width:80px;
+}
+
+.shadowed {
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }

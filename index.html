@@ -6,16 +6,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
     <title>FilterHub</title>
 </head>
 <body>
 
+    <div class = "navbar"></div>
+
     <!--Hero Landing Page-->
     <div id = "divHero" class = "landingHero flex">
-        <span class = "heroTitle fade-in-doubletime">We Are Advanced Filtration.</span>
+        <span class = "heroTitle fade-in-doubletime">We Are &nbsp;<label id = "lblOnlyDoes">Advanced Filtration.</label></span>
         <span id = divHeroImageWrapper class = "heroImageWrapper fade-in-fast">
-        <img src = "assets/aHepa.png" class = "heroImage">    
+        <img src = "assets/aHepa.png" class = "heroImage" style="-webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);">    
         </span>
         
         
@@ -53,17 +56,20 @@
                  <form>
                     <div class="form-control">
                         <select id = "selectManufacturer">
+                        <option disabled selected value = "NONE">Manufacturer</option>
                         <option value = "AS">AirScience</option>
                         <option value = "Mis">Misonix</option>    
                         </select>
                     </div>
                     <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
+                        <select id = "selectManufacturer">
+                            <option disabled selected value = "NONE">Model</option>
+                            <option value = "AS">AirScience</option>
+                            <option value = "Mis">Misonix</option>    
+                            </select>
                     </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
+
+                    <input type="submit" value="Go" class="btn btn-primary btn-center">
                 </form>
             </div>
         </div>
@@ -73,38 +79,25 @@
     <section class="stats">
         <div class="container">
             <h3 class="stats-heading text-center my-1">
-                Welcome to the best platform for building applications of all types with modern architecture and scaling
+                Welcome to your central location to purchase filtration units.
             </h3>
 
             <div class="grid grid-3 text-center my-4">
                 <div>
                     <i class="fas fa-server fa-3x"></i>
-                    <h3>10,349,405</h3>
-                    <p class="text-secondary">Deployments</p>
+                    <h3>30+</h3>
+                    <p class="text-secondary">Manufacturers</p>
                 </div>
                 <div>
                     <i class="fas fa-upload fa-3x"></i>
-                    <h3>987 TB</h3>
-                    <p class="text-secondary">Published</p>
+                    <h3>7891</h3>
+                    <p class="text-secondary">Happy Customers</p>
                 </div>
                 <div>
                     <i class="fas fa-project-diagram fa-3x"></i>
                     <h3>2,343,265</h3>
                     <p class="text-secondary">Projects</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cli -->
-    <section class="cli">
-        <div class="container grid">
-            <img src="images/cli.png" alt="">
-            <div class="card">
-                <h3>Easy to use, cross platform CLI</h3>
-            </div>
-            <div class="card">
-                <h3>Deploy in seconds</h3>
             </div>
         </div>
     </section>

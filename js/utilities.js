@@ -18,3 +18,48 @@ function myFunction() {
     buffer.classList.remove("stickybuffer");
   }
 }
+
+
+
+
+var onlyDoes = 0;
+var onlyDoes = [
+  "Advanced Filtration.",
+  "Trusted Safety.",
+  "HEPA Specialists.",
+  "Reliable.",
+  "Carbon Filtrationists.",
+  "Clean Air."
+
+]
+cycleOnlyDoes(0);
+
+function cycleOnlyDoes(j){
+
+  
+  var label = document.getElementById("lblOnlyDoes");
+  console.log(label.classList);
+
+  label.classList.remove("w3-animate-bottom");
+  label.classList.add("fade-out-very-fast");
+
+  setTimeout(function(){
+    void label.offsetWidth;
+    label.innerHTML = onlyDoes[j];
+    label.classList.add("w3-animate-bottom");
+    label.classList.remove("fade-out-very-fast");
+
+  }, 1000);
+  
+
+
+  nextOnlyDoes = j+1;
+  if(j>onlyDoes.length-2){
+      nextOnlyDoes=0;
+  }
+
+
+  setTimeout(function(){ cycleOnlyDoes(nextOnlyDoes); currCycle = nextOnlyDoes;}, 2500);
+}
+
+
